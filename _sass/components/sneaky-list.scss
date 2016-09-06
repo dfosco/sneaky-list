@@ -1,0 +1,77 @@
+.sneaky-list {
+
+&:nth-last-child(3n):first-child,
+  &:nth-last-child(3n):first-child ~ &  {
+    max-width: calc(33% - 10px);
+    // Styling
+     &::after {
+       content: '33%';
+     }
+  }
+
+  &:nth-last-child(3n+1):first-child,
+  &:nth-last-child(3n+1):first-child ~ &  {
+    max-width: calc(33% - 10px);
+     // Styling
+     &::after {
+       content: '33%';
+     }
+  }
+
+  &:nth-last-child(2n):first-child,
+  &:nth-last-child(2n):first-child ~ &  {
+    max-width: calc(25% - 10px);
+    // Styling
+    &::after {
+     content: '25%';
+    }
+  }
+
+  &:nth-last-child(2):first-child,
+  &:nth-last-child(2):first-child ~ &  {
+    max-width: calc(50% - 10px);
+     // Styling
+     &::after {
+       content: '50%';
+     }
+  }
+
+  &:nth-last-child(2n+1):first-child,
+  &:nth-last-child(2n+1):first-child ~ &  {
+    max-width: calc(33% - 10px);
+    // Styling
+    &::after {
+      content: '33%';
+    }
+  }
+
+  &:nth-last-child(5n):first-child,
+  &:nth-last-child(5n):first-child ~ &  {
+    max-width: calc(20% - 10px);
+     // Styling
+     &::after {
+       content: '20%';
+     }
+  }
+
+  &:nth-last-child(5n+1):first-child,
+  &:nth-last-child(5n+1):first-child ~ &  {
+    max-width: calc(33% - 10px);
+     // Styling
+     &::after {
+       content: '33%';
+     }
+  }
+
+  &:nth-child(odd):last-child {
+    max-width: calc(33% - 10px);
+  }
+
+  &:only-child:last-child {
+    max-width: 100%;
+     // Styling
+     &::after {
+       content: '100%';
+     }
+  }
+}
