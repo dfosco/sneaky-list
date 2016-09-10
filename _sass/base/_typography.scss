@@ -1,0 +1,38 @@
+body {
+
+  // Font Families
+  h1, h2, h3, h4, h5 {
+    font-family: $header-font-family;
+  };
+
+  p, span, li, a, button {
+    font-family: $base-font-family;
+  }
+
+  // Font Scale
+
+  .font-scale-2up {
+    font-size: ms(4, 1em, $golden);
+  }
+
+  .font-scale-1up {
+    font-size: ms(3, 1em, $golden);
+  }
+
+  h1 {
+    font-size: ms(2, 1em, $golden);
+  }
+
+  h2 {
+    font-size: ms(1, 1em, $golden);
+  }
+
+  h3 {
+    font-size: ms(1, 1em, $golden);
+    font-weight: 400;
+  }
+
+  p, span, li {
+    font-size: ms(0, 1em, $golden);
+  }
+}

@@ -1,0 +1,17 @@
+.hero {
+  background: #B24592;
+  background: -webkit-linear-gradient(to left, #B24592 , #F15F79);
+  background: linear-gradient(to left, #B24592 , #F15F79);
+  height: 300px;
+  width: 100%;
+  top: 0;
+  padding: 5px;
+
+  &__title {
+    color: $base;
+    font-family: $header-font-family;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+  }
+}

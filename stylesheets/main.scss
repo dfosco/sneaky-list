@@ -5,16 +5,14 @@
 
 /* Import partials from `sass_dir` (defaults to `sass`) */
 
-// Bootstrap
-// Custom variables must load before bootstrap.
-
 // Base
-// @import "base/modular-scale/modular-scale";
-// @import "base/color";
-// @import "base/typography";
+@import "base/modular-scale/modular-scale";
+@import "base/variables";
+@import "base/typography";
 @import "base/base";
 @import "base/syntax-highlighting";
 
 
 // Components
 @import "components/sneaky-list";
+@import "components/hero";
